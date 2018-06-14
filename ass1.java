@@ -13,12 +13,21 @@ class RollDice {
 		{
             	die = (int)(Math.random()*6) + 1;
 		result =Integer.toString(die);}
+
 		else if(die==4){
 	die = (int)(Math.random()*4) + 1;
-	result =Integer.toString(die);}
+	result =Integer.toString(die);
+	}
+
 	else if(die==2){
 	die = (int)(Math.random()*2) + 1;
-	result =Integer.toString(die);}
+	
+	if(die==1)
+	result ="head";
+	else
+	result ="tail";
+	}
+
 	else
 
 	result ="invalid input";
